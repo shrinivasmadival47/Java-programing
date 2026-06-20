@@ -6,15 +6,15 @@
   <title>Hello World</title>
   <style>
     :root {
-      color-scheme: dark;
-      --ink: #f8fafc;
-      --muted: #b8c3d9;
-      --glass: rgba(9, 18, 35, 0.68);
-      --line: rgba(255, 255, 255, 0.18);
-      --aqua: #36f1cd;
-      --gold: #ffd166;
-      --coral: #ff6f91;
-      --blue: #54a0ff;
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #607086;
+      --glass: rgba(255, 255, 255, 0.78);
+      --line: rgba(23, 32, 51, 0.14);
+      --aqua: #00b8a9;
+      --gold: #ffb703;
+      --coral: #ef476f;
+      --blue: #3a86ff;
     }
 
     * {
@@ -30,10 +30,10 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
       background:
-        radial-gradient(circle at 18% 18%, rgba(54, 241, 205, 0.22), transparent 28%),
-        radial-gradient(circle at 82% 12%, rgba(255, 209, 102, 0.20), transparent 26%),
-        radial-gradient(circle at 72% 82%, rgba(255, 111, 145, 0.20), transparent 30%),
-        linear-gradient(135deg, #08111f 0%, #151529 45%, #24142b 100%);
+        radial-gradient(circle at 16% 18%, rgba(0, 184, 169, 0.22), transparent 28%),
+        radial-gradient(circle at 84% 14%, rgba(255, 183, 3, 0.26), transparent 28%),
+        radial-gradient(circle at 72% 84%, rgba(239, 71, 111, 0.18), transparent 30%),
+        linear-gradient(135deg, #f8fcff 0%, #edf6ff 48%, #fff5f8 100%);
     }
 
     main {
@@ -43,7 +43,7 @@
       border: 1px solid var(--line);
       border-radius: 28px;
       background: var(--glass);
-      box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+      box-shadow: 0 28px 80px rgba(57, 79, 117, 0.18);
       backdrop-filter: blur(22px);
       text-align: center;
       isolation: isolate;
@@ -65,10 +65,10 @@
       align-items: center;
       gap: 0.55rem;
       padding: 0.55rem 0.85rem;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      border: 1px solid var(--line);
       border-radius: 999px;
       color: var(--muted);
-      background: rgba(255, 255, 255, 0.07);
+      background: rgba(255, 255, 255, 0.64);
       font-size: 0.82rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -124,7 +124,7 @@
       padding: 0.35rem;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(9, 18, 35, 0.72);
+      background: rgba(255, 255, 255, 0.74);
       backdrop-filter: blur(16px);
       transform: translateX(-50%);
     }
@@ -152,7 +152,7 @@
       padding: 0.85rem 1.1rem;
       color: #07111e;
       background: var(--aqua);
-      box-shadow: 0 12px 30px rgba(54, 241, 205, 0.24);
+      box-shadow: 0 12px 30px rgba(0, 184, 169, 0.22);
       cursor: pointer;
       font: inherit;
       font-weight: 800;
@@ -162,7 +162,7 @@
 
     button {
       color: var(--ink);
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.62);
       border: 1px solid var(--line);
       box-shadow: none;
     }
@@ -170,14 +170,14 @@
     a:hover,
     button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 16px 36px rgba(54, 241, 205, 0.28);
+      box-shadow: 0 16px 36px rgba(0, 184, 169, 0.24);
     }
 
     body.party main {
       box-shadow:
-        0 28px 90px rgba(0, 0, 0, 0.42),
-        0 0 70px rgba(255, 209, 102, 0.22),
-        0 0 90px rgba(255, 111, 145, 0.18);
+        0 28px 80px rgba(57, 79, 117, 0.18),
+        0 0 70px rgba(255, 183, 3, 0.22),
+        0 0 90px rgba(239, 71, 111, 0.18);
     }
 
     body.party h1 span {
@@ -188,7 +188,7 @@
       position: absolute;
       width: 13rem;
       height: 13rem;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(23, 32, 51, 0.15);
       border-radius: 50%;
       animation: spin 16s linear infinite;
     }
