@@ -1,4 +1,4 @@
-# Java-programing
-This is my java codes for developing the coding skill from scratch.
+# MyFirst
+Learning about github
 <br>
 Author - Shrinivas Madival
