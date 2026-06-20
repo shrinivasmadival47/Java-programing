@@ -114,6 +114,36 @@
       margin-top: 2rem;
     }
 
+    nav {
+      position: fixed;
+      top: 1rem;
+      left: 50%;
+      z-index: 10;
+      display: flex;
+      gap: 0.4rem;
+      padding: 0.35rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(9, 18, 35, 0.72);
+      backdrop-filter: blur(16px);
+      transform: translateX(-50%);
+    }
+
+    nav a {
+      min-height: 0;
+      border-radius: 999px;
+      padding: 0.55rem 0.85rem;
+      color: var(--muted);
+      background: transparent;
+      box-shadow: none;
+      font-size: 0.9rem;
+    }
+
+    nav a[aria-current="page"] {
+      color: #07111e;
+      background: var(--aqua);
+    }
+
     a,
     button {
       min-height: 48px;
@@ -205,6 +235,11 @@
   </style>
 </head>
 <body>
+  <nav aria-label="Main navigation">
+    <a href="hello-world.html" aria-current="page">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <main>
     <div class="orbit orbit-left"></div>
     <div class="orbit orbit-right"></div>
@@ -212,7 +247,7 @@
     <h1>Hello <span>World</span></h1>
     <p>A small, shiny HTML page with glassy depth, bright accents, and just enough motion to feel alive.</p>
     <div class="actions">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">Explore HTML</a>
+      <a href="about.html">About This Site</a>
       <button type="button" onclick="document.body.classList.toggle('party')">Make it sparkle</button>
     </div>
   </main>
